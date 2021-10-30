@@ -2,7 +2,7 @@
     require('config/config.php');
     require('config/db.php');
 
-    $query = 'SELECT * FROM person ORDER BY pid DESC';
+    $query = 'SELECT * FROM PERSON ORDER BY pid DESC';
     $result = mysqli_query($conn, $query);
     $persons = mysqli_fetch_all($result, MYSQLI_ASSOC);
     mysqli_free_result($result);
@@ -11,9 +11,9 @@
 ?>
 
 <?php include('inc/header.php'); ?>
-	<div class="container">
+    <div class="container">
     <br/>
-		<h2>Person's Log</h2>
+        <h2>Person's Log</h2>
         <table class="table">
                 <thead class="thead-dark">
                     <tr>
@@ -24,8 +24,8 @@
                     <th scope="col">Log Date and Time</th>
                     </tr>
                 </thead>
-		
-			<div class="well">
+        
+            <div class="well">
                 <tbody>
                 <?php foreach($persons as $person) : ?>
                     <tr>
