@@ -1,5 +1,5 @@
 <?php
-	define('ROOT_URL', 'http://localhost/logApp-Lagan/');
+	define('ROOT_URL', 'https://infinite-spire-63641.herokuapp.com/');
 	define('DB_HOST', 'sql6.freesqldatabase.com');
 	define('DB_USER', 'sql6447569');
 	define('DB_PASS', 'PwgfFD6W9A');
